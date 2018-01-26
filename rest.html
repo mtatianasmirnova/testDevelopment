@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -11,27 +10,21 @@
 	
 	<script type="text/javascript">
 
-		/*function Test()
+		function Test()
 		{
-		var xhr = new XMLHttpRequest();
-		xhr.open("GET", "books.xml", true);
-		//https://demo.navvis.com/iv.dev/api/poi_type_groups
-		xhr.send();
-		console.log("Status is " + xhr.status);
-		console.log("StatusText is " + xhr.statusText);
-		}
-*/
 
-xmlhttp=new XMLHttpRequest();
-xmlhttp.open("GET","https://demo.navvis.com/iv.dev/api/poi_type_groups", true);
-xmlhttp.onreadystatechange=function() 
-{
-  if(xmlhttp.readyState==4)
-    alert("status " + xmlhttp.status);
-}
-xmlhttp.send();
+
+			xmlhttp=new XMLHttpRequest();
+			xmlhttp.open("GET","https://demo.navvis.com/iv.dev/api/poi_type_groups", true);
+			xmlhttp.onreadystatechange=function() 
+				{
+  					//if(xmlhttp.readyState==4)
+    				//alert("status " + xmlhttp.status);
+    				console.log(xmlhttp.status);
+				}
+			xmlhttp.send();
 		
-
+		}
 		
 
 	
@@ -41,7 +34,7 @@ xmlhttp.send();
 </head>
 <body>
 Test
-<button type="button" onclick="Test()">Change Content</button>
+<button type="button" onclick="Test()">Check Status</button>
 
 </body>
 </html>
