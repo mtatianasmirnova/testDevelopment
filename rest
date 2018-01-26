@@ -1,0 +1,48 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<title>NavVis Indoor Viewer - Embedding Example</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<!-- NavVis IndoorViewer -->
+	<!-- Replace 'https://demo.navvis.com/iv.dev' in this URL with the address of your IndoorViewer instance -->
+
+	
+	<script type="text/javascript">
+
+		/*function Test()
+		{
+		var xhr = new XMLHttpRequest();
+		xhr.open("GET", "books.xml", true);
+		//https://demo.navvis.com/iv.dev/api/poi_type_groups
+		xhr.send();
+		console.log("Status is " + xhr.status);
+		console.log("StatusText is " + xhr.statusText);
+		}
+*/
+
+xmlhttp=new XMLHttpRequest();
+xmlhttp.open("GET","http://www.w3schools.com/XML/cd_catalog.xml", true);
+xmlhttp.onreadystatechange=function() 
+{
+  if(xmlhttp.readyState==4)
+    alert("status " + xmlhttp.status);
+}
+xmlhttp.send();
+		
+
+		
+
+	
+	
+		
+	</script>
+</head>
+<body>
+Test
+<button type="button" onclick="Test()">Change Content</button>
+
+</body>
+</html>
+
